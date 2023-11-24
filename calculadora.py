@@ -1,5 +1,29 @@
 import tkinter as tk
 
+
+class Sumar(tk.Frame):
+    def sumar(valor_anterior, valor_actual):
+        return valor_anterior + valor_actual
+
+
+class Restar(tk.Frame):
+    def restar(valor_anterior, valor_actual):
+        return valor_anterior - valor_actual
+
+
+class Multiplicar(tk.Frame):
+    def multiplicar(valor_anterior, valor_actual):
+        return valor_anterior * valor_actual
+
+
+class Dividir(tk.Frame):
+    def dividir(valor_anterior, valor_actual):
+        if valor_actual != 0:
+            return valor_anterior / valor_actual
+        else:
+            return "No se puede dividir entre cero"
+
+
 class Calculadora(tk.Frame):
 
     def __init__(self, master=None):
@@ -74,7 +98,8 @@ class Calculadora(tk.Frame):
         display_frame = tk.Frame(self)
         display_frame.pack()
 
-        display_entry = tk.Entry(display_frame, textvariable=self.num_display, font=("Arial", 12), state='disabled')
+        display_entry = tk.Entry(display_frame, textvariable=self.num_display, font=(
+            "Arial", 12), state='disabled')
         display_entry.pack(side="left", padx=5, pady=5)
 
         num_buttons_frame = tk.Frame(self)
@@ -90,10 +115,10 @@ class Calculadora(tk.Frame):
         for i, num in enumerate(buttons_layout):
             if num != 'C':
                 button = tk.Button(num_buttons_frame, text=num, width=5, height=2, font=("Arial", 12),
-                                    command=lambda n=num: self.agregar_numero(n))
+                                   command=lambda n=num: self.agregar_numero(n))
             else:
                 button = tk.Button(num_buttons_frame, text=num, width=5, height=2, font=("Arial", 12),
-                                    command=self.limpiar_display)
+                                   command=self.limpiar_display)
 
             button.grid(row=i // 3, column=i % 3, padx=5, pady=5)
 
@@ -103,15 +128,16 @@ class Calculadora(tk.Frame):
         operations = ['+', '-', '/', '=', '*']  # Reordenados
         for i, op in enumerate(operations):
             button = tk.Button(operation_frame, text=op, width=5, height=2, font=("Arial", 12),
-                                command=lambda symbol=op: self.realizar_operacion(symbol) if symbol != '=' else self.calcular_resultado())
+                               command=lambda symbol=op: self.realizar_operacion(symbol) if symbol != '=' else self.calcular_resultado())
             button.grid(row=0, column=i, padx=5, pady=5)
 
         quit_frame = tk.Frame(self)
         quit_frame.pack()
 
         self.quit = tk.Button(quit_frame, text="QUIT", fg="red", font=("Arial", 12),
-                                command=self.master.destroy)
+                              command=self.master.destroy)
         self.quit.pack(padx=5, pady=5)
+
 
 root = tk.Tk()
 app = Calculadora(master=root)
