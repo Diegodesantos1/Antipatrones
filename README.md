@@ -246,3 +246,14 @@ He pasado del Spaghetti:
 A un código mucho más optimizado y aplicando los principios SOLID:
 
 <img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/UML/Final.png">
+
+
+#### Resultado Final
+
+En Django:
+
+<img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/Django.PNG">
+
+En Tkinter
+
+<img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/Tkinter.PNG">
