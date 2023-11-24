@@ -1,23 +1,25 @@
 function guardarOperacionEnDB() {
-    var inputNumbers = document.getElementById("inputNumbers");
-    var operacion = inputNumbers.value;
+    var operacion = document.getElementById("inputNumbers").value;
 
-    // Enviar la operación al backend
     fetch('/guardar_operacion/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken') // Asegúrate de obtener el token CSRF
         },
         body: JSON.stringify({ operacion: operacion })
     })
     .then(response => {
         if (response.ok) {
-            console.log('Operación guardada correctamente');
+            // La operación se guardó exitosamente
+            console.log('Operación guardada en la base de datos');
         } else {
-            console.error('Error al guardar la operación');
+            // Manejar el error si la operación no se guardó correctamente
+            console.error('Error al guardar la operación en la base de datos');
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        // Manejar los errores de conexión o solicitud
+        console.error('Error de red:', error);
     });
 }

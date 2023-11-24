@@ -8,6 +8,7 @@ def index(request):
 
 
 
+
 def guardar_operacion(request):
     if request.method == 'POST':
         data = json.loads(request.body)

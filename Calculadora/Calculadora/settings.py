@@ -127,7 +127,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 
-base_key = 'TU_BASE_KEY'  # Reemplaza con el ID de tu base de datos en Airtable
+base_key = 'app2knqNuI7aBzf87'  # Reemplaza con el ID de tu base de datos en Airtable
 table_name = 'Prueba'
 api_key = 'pat67idihhcENInZt.df763f97e58ef668aad585463681615625e6aebdf4c7a284cb4a0269de693f01'
 
