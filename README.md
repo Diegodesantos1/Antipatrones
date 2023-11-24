@@ -28,8 +28,17 @@ El objetivo es identificar las características del antipatrón "Spaghetti Code"
 
 Evaluación del Ejercicio:
 
-Identificación de Características de "Spaghetti Code" (20%)
-Se busca identificar y describir las características específicas del código que indican la presencia de "Spaghetti Code".
+## Identificación de Características de "Spaghetti Code" (20%)
+
+### Función `calcular`
+
+La función `calcular` presenta ciertas características que indican la presencia de "Spaghetti Code":
+
+- **Control basado en cadenas**: El uso de cadenas (`'suma'`, `'resta'`, `'multiplicacion'`, `'division'`) para controlar el flujo del programa puede llevar a una lógica compleja y poco clara.
+
+- **Lógica anidada y falta de modularización**: El manejo de diferentes operaciones se realiza a través de múltiples condicionales anidados (`if-else`), lo que dificulta la lectura y mantenimiento del código.
+
+- **Manejo de errores sin excepciones**: La función maneja un caso de error (división por cero) mediante una impresión directa, lo cual puede no ser adecuado para un manejo robusto de errores. La falta de excepciones podría llevar a un control poco estructurado de casos excepcionales.
 
 Refactorización del Código (60%)
 
