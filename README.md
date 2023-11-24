@@ -1,3 +1,7 @@
+<h1 align="center">Antipatrones</h1>
+
+En este [repositorio](https://github.com/Diegodesantos1/Antipatrones) queda resuelta la práctica de los Patrones Creacionales.
+
 ## Identificación y Refactorización del Antipatrón "Spaghetti Code" en Python
 
 ### Descripción del Ejercicio
@@ -242,3 +246,14 @@ He pasado del Spaghetti:
 A un código mucho más optimizado y aplicando los principios SOLID:
 
 <img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/UML/Final.png">
+
+
+#### Resultado Final
+
+En Django:
+
+<img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/Django.PNG">
+
+En Tkinter
+
+<img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/Tkinter.PNG">
