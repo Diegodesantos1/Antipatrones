@@ -231,3 +231,14 @@ La versión mejorada del código muestra una clara separación de responsabilida
 Las clases separadas para cada operación permiten un enfoque más modular y organizado, facilitando la reutilización de código y promoviendo buenas prácticas de desarrollo.
 
 El uso de una interfaz gráfica (GUI) para la calculadora mejora la experiencia del usuario al proporcionar una forma interactiva y visual de realizar cálculos, lo que hace que la aplicación sea más intuitiva y accesible.
+
+### UMLS:
+
+He pasado del Spaghetti:
+
+
+<img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/UML/Inicial.png">
+
+A un código mucho más optimizado y aplicando los principios SOLID:
+
+<img src="https://github.com/Diegodesantos1/Antipatrones/blob/main/UML/Final.png">
