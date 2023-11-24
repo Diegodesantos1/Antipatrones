@@ -26,6 +26,7 @@
             <button onclick="guardarOperador('/')">/</button>
             <button onclick="calcularResultado('')">=</button>
         </div>
+        <button id="guardarEnDB" onclick="guardarOperacionEnDB()">Guardar en DB</button>
 
         <div class="seccion" id="operadores-exponenciales">
             <h2>Operadores Exponenciales</h2>
@@ -48,6 +49,7 @@
         </div>
 
         <script src="{% static 'CalculadoraWebApp/js/script.js' %}"></script>
+        <script src="{% static 'CalculadoraWebApp/js/guardar.js' %}"></script>
     </div>
 </body>
 
