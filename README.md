@@ -210,10 +210,24 @@ app = Calculadora(master=root)
 app.mainloop()
 ```
 
-Justificación de Cambios (20%)
-Se requiere una explicación detallada de los cambios realizados, cómo estos mejoran el código y cómo evitan las características de "Spaghetti Code".
+### Justificación de Cambios:
 
-Observaciones Finales:
+1. **Modularización y estructura clara:**
+   - El código inicial se basaba en una función grande con múltiples sentencias condicionales, lo que dificultaba su mantenimiento y comprensión.
+   - La refactorización separó las operaciones matemáticas en clases separadas (Sumar, Restar, Multiplicar, Dividir), lo que proporciona una estructura más modular y organizada.
+   - La nueva versión implementa métodos estáticos para cada operación, facilitando su uso y comprensión.
 
-Se debe presentar una versión mejorada del código que demuestre una estructura más limpia y un diseño más claro. 
-Asegúrate de destacar los beneficios de los cambios realizados y cómo estos mejoran la calidad y mantenibilidad del código.
+2. **Eliminación del "Spaghetti Code":**
+   - El código original presentaba características de "Spaghetti Code" al depender en gran medida de estructuras condicionales anidadas, lo que lo hacía difícil de entender y mantener.
+   - La refactorización elimina este problema al dividir las operaciones en clases separadas, brindando una estructura más clara y manejable.
+
+3. **Mejor manejo de errores:**
+   - El código refactorizado maneja mejor los errores al dividir, evitando la división por cero y proporcionando mensajes claros en lugar de simplemente imprimir en la consola.
+
+### Observaciones Finales:
+
+La versión mejorada del código muestra una clara separación de responsabilidades, con operaciones matemáticas encapsuladas en clases individuales. Esto mejora significativamente la legibilidad, la mantenibilidad y la escalabilidad del código, reduciendo la complejidad y facilitando futuras extensiones o modificaciones.
+
+Las clases separadas para cada operación permiten un enfoque más modular y organizado, facilitando la reutilización de código y promoviendo buenas prácticas de desarrollo.
+
+El uso de una interfaz gráfica (GUI) para la calculadora mejora la experiencia del usuario al proporcionar una forma interactiva y visual de realizar cálculos, lo que hace que la aplicación sea más intuitiva y accesible.
